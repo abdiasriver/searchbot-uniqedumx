@@ -131,7 +131,7 @@ class GoogleDriveHelper:
             INDEX += 1          
             if response:
                 if add_title_msg == True:
-                    msg = f'<h3>Resultados para : {fileName}</h3><br>@cinedriveonline<br><br>'
+                    msg = f'<h3>Resultados para : {fileName}</h3><br>Puedes encontrarlas online en https://peliculas.uniexpro.edu.mx<br><br>'
                     add_title_msg = False
                 msg += f"╾────────────╼<br><b>{DRIVE_NAME[INDEX]}</b><br>╾────────────╼<br>"
                 for file in response:
