@@ -1,0 +1,10 @@
+Crear proyecto
+activar drive
+Pantalla de consentimiento externo
+Tipo de app de escritorio
+credenciales oauth descargar credentials.json
+python3 generate_drive_token.py
+pip3 install telegraph
+python3 telegraph_token.py
+python3 driveid.py
+
