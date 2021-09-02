@@ -144,7 +144,7 @@ class GoogleDriveHelper:
                             msg += f'<b> | <a href="{url}">☄️ Index Link ☄️</a></b>'
                     else:
                         msg += f"📄<code>{file.get('name')}</code> <b>({self.get_readable_file_size(file.get('size'))})</b><br>" \
-                               f"<b><a href='https://drive.google.com/uc?id={file.get('id')}/view'>🌠 Link Gdrive 🌠</a></b>"
+                               f"<b><a href='https://drive.google.com/file/d/{file.get('id')}/view'>🌠 Link Gdrive 🌠</a></b>"
                         if INDEX_URL[INDEX] is not None:
                             url_path = "/".join([requests.utils.quote(n, safe ='') for n in self.get_recursive_list(file, parent_id)])
                             url = f'{INDEX_URL[INDEX]}/{url_path}'
